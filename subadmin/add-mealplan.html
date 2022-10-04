@@ -27,7 +27,7 @@
 
         <ul class="sidebar-nav">
           <li class="sidebar-header">
-            Back Office - Admin
+            Back Office - Sub Admin
           </li>
 
           <li class="sidebar-item">
@@ -37,40 +37,16 @@
           </li>
 
           <!-- <li class="sidebar-item">
-            <a class="sidebar-link" href="pages-profile.html">
-              <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
-            </a>
-          </li>
-
-          <li class="sidebar-item">
-            <a class="sidebar-link" href="pages-sign-in.html">
-              <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Sign In</span>
-            </a>
-          </li>
-
-          <li class="sidebar-item">
-            <a class="sidebar-link" href="pages-sign-up.html">
-              <i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Sign Up</span>
-            </a>
-          </li> -->
-
-          <li class="sidebar-item">
             <a class="sidebar-link" href="subadmin.html">
               <i class="align-middle" data-feather="users"></i> <span class="align-middle">Sub Admin</span>
             </a>
           </li>
 
-          <!-- <li class="sidebar-item">
-            <a class="sidebar-link" href="add-subadmin.html">
-              <i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Create Subadmin</span>
-            </a>
-          </li> -->
-
           <li class="sidebar-item">
             <a class="sidebar-link" href="store.html">
               <i class="align-middle" data-feather="map"></i> <span class="align-middle">Stores</span>
             </a>
-          </li>
+          </li> -->
 
           <li class="sidebar-item">
             <a class="sidebar-link" href="products.html">
@@ -95,6 +71,7 @@
               <i class="align-middle" data-feather="settings"></i> <span class="align-middle">Settings</span>
             </a>
           </li>
+          
         </ul>
       </div>
     </nav>
@@ -168,50 +145,52 @@
         <div class="container-fluid p-0">
           <div class="row"> 
             <div class="col-md-12">
-              <h1 class="h3 mb-3">Stores</h1>
-              <a href="add-store.html" class="btn btn-sm btn-warning float-end create-sub">Create a Store <i class="bi bi-person-plus-fill"></i></a>
+              <h1 class="h3 mb-3">Create a Meal Plan</h1>
+              <!-- <a href="#" class="btn btn-sm btn-warning float-end create-sub">Create SubAdmin <i class="bi bi-person-plus-fill"></i></a> -->
             </div>
           </div>
           <div class="row">
-            <div class="col-12">
+            <div class="">
               <div class="card">
                 <div class="card-body">
-                  <table class="table table-hover my-0">
-                    <thead>
-                      <tr>
-                        <th>Store name</th>
-                        <th>Email</th>
-                        <th>Phone number</th>
-                        <th>Assigned to</th>
-                        <th>Actions</th>
-                        <!-- <th class="d-none d-md-table-cell">Assignee</th> -->
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Yaba</td>
-                        <td>johndoe@gmail.com</td>
-                        <td>08080221900</td>
-                        <td>John Doe</td>
-                        <td><a href="#"><i class="bi bi-eye-fill me-2"></i></a> <a href="#"><i class="bi bi-pencil-square me-2"></i></a> <a href="#"><i class="bi bi-trash-fill"></i></a></td>
-                      </tr>
-                      <tr>
-                        <td>Aguda</td>
-                        <td>johndoe@gmail.com</td>
-                        <td>08080221900</td>
-                        <td>John Doe</td>
-                        <td><a href="#"><i class="bi bi-eye-fill me-2"></i></a> <a href="#"><i class="bi bi-pencil-square me-2"></i></a> <a href="#"><i class="bi bi-trash-fill"></i></a></td>
-                      </tr>
-                      <tr>
-                        <td>Lekki Phase 1</td>
-                        <td>johndoe@gmail.com</td>
-                        <td>08080221900</td>
-                        <td>John Doe</td>
-                        <td><a href="#"><i class="bi bi-eye-fill me-2"></i></a> <a href="#"><i class="bi bi-pencil-square me-2"></i></a> <a href="#"><i class="bi bi-trash-fill"></i></a></td>
-                      </tr>
+                  <div class="m-sm-4">
+                    <form>
+                      <div class="mb-3">
+                        <label class="form-label">Meal Plan Name</label>
+                        <input class="form-control form-control-lg" type="text" name="name" placeholder="Enter product name" />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Description</label>
+                        <input class="form-control form-control-lg" type="text" placeholder="Enter a description">
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Products</label>
+                        <select class="form-select form-control form-control-lg" multiple>
+                          <option selected>Select multiple products</option>
+                          <option value="1">Parfait</option>
+                          <option value="2">Sandwiches</option>
+                          <option value="2">Zobo</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Price</label>
+                        <input class="form-control form-control-lg" type="number" name="price" placeholder="Enter price" />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Status</label>
+                        <select class="form-select form-control form-control-lg" >
+                          <option selected>Select Status</option>
+                          <option value="1">Available</option>
+                          <option value="2">Not Available</option>
+                          <!-- <option value="3">Three</option> -->
+                        </select>
+                      </div>
                       
-                    </tbody>
-                  </table>
+                      <div class="text-center mt-3">
+                        <a href="#" class="btn btn-lg btn-warning">Create Meal Plan</a>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
