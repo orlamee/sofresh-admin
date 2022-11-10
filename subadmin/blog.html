@@ -27,7 +27,7 @@
 
         <ul class="sidebar-nav">
           <li class="sidebar-header">
-            Back Office - Admin
+            Back Office - Sub Admin
           </li>
 
           <li class="sidebar-item">
@@ -36,42 +36,7 @@
             </a>
           </li>
 
-          <!-- <li class="sidebar-item">
-            <a class="sidebar-link" href="pages-profile.html">
-              <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
-            </a>
-          </li>
-
-          <li class="sidebar-item">
-            <a class="sidebar-link" href="pages-sign-in.html">
-              <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Sign In</span>
-            </a>
-          </li>
-
-          <li class="sidebar-item">
-            <a class="sidebar-link" href="pages-sign-up.html">
-              <i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Sign Up</span>
-            </a>
-          </li> -->
-
-          <li class="sidebar-item">
-            <a class="sidebar-link" href="subadmin.html">
-              <i class="align-middle" data-feather="users"></i> <span class="align-middle">Sub Admin</span>
-            </a>
-          </li>
-
-          <!-- <li class="sidebar-item">
-            <a class="sidebar-link" href="add-subadmin.html">
-              <i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Create Subadmin</span>
-            </a>
-          </li> -->
-
-          <li class="sidebar-item">
-            <a class="sidebar-link" href="store.html">
-              <i class="align-middle" data-feather="map"></i> <span class="align-middle">Stores</span>
-            </a>
-          </li>
-
+          
           <li class="sidebar-item">
             <a class="sidebar-link" href="products.html">
               <i class="align-middle" data-feather="shopping-cart"></i> <span class="align-middle">Products</span>
@@ -175,58 +140,59 @@
         <div class="container-fluid p-0">
           <div class="row"> 
             <div class="col-md-12">
-              <h1 class="h3 mb-3">Create a Product</h1>
-              <!-- <a href="#" class="btn btn-sm btn-warning float-end create-sub">Create SubAdmin <i class="bi bi-person-plus-fill"></i></a> -->
+              <h1 class="h3 mb-3">Blog Posts</h1>
+              <a href="add-blog.html" class="btn btn-sm btn-warning float-end create-sub">Create Blog Post <i class="bi bi-book"></i></a>
             </div>
           </div>
           <div class="row">
-            <div class="">
+            <div class="col-12">
               <div class="card">
                 <div class="card-body">
-                  <div class="m-sm-4">
-                    <form>
-                      <div class="mb-3">
-                        <label class="form-label">Product Name</label>
-                        <input class="form-control form-control-lg" type="text" name="name" placeholder="Enter product name" />
-                      </div>
-                      <div class="mb-3">
-                        <label class="form-label">Upload Product Image</label>
-                        <input class="form-control form-control-sm" id="formFileSm" type="file">
-                      </div>
-                      <div class="mb-3">
-                        <label class="form-label">Price</label>
-                        <input class="form-control form-control-lg" type="number" name="price" placeholder="Enter price" />
-                      </div>
-                      <div class="mb-3">
-                        <label class="form-label">Promo Price</label>
-                        <input class="form-control form-control-lg" type="number" name="promo" placeholder="Enter promo price" />
-                      </div>
-                      <div class="mb-3">
-                        <label class="form-label">Product Category</label>
-                        <select class="form-select form-control form-control-lg" >
-                          <option selected>Select a Category</option>
-                          <option value="1">Parfait</option>
-                          <option value="2">Sandwiches</option>
-                          <option value="2">Zobo</option>
-                        </select>
-                        <!-- <input class="form-control form-control-lg" type="password" name="password" placeholder="Enter password" /> -->
-                      </div>
-                      <div class="mb-3">
-                        <label class="form-label">Store</label>
-                        <select class="form-select form-control form-control-lg" >
-                          <option selected>Select a Store</option>
-                          <option value="1">Lekki</option>
-                          <option value="2">Yaba</option>
-                          <option value="2">Ikeja</option>
-                        </select>
-                      </div>
+                  <table class="table table-hover my-0">
+                    <thead>
+                      <tr>
+                        <th>Title</th>
+                        <th>Content</th>
+                        <th>Feature Image</th>
+                        <th>Category</th>
+                        <th>Actions</th>
+
+                        <!-- <th class="d-none d-md-table-cell">Assignee</th> -->
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Daily Challenge with So Fresh</td>
+                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis in numquam dignissimos odio ullam, aliquam officiis earum quod? Id hic eligendi mollitia illum dolores labore officiis soluta quis placeat vel!</td> 
+                        <td><img src="../src/img/products/parfait.png" alt="" width="50px"></td>
+                        <td>Fitness, Diets</td>
+                        <td><a href="#"><i class="bi bi-eye-fill"></i></a> <a href="#"><i class="bi bi-pencil-square"></i></a> <a href="#"><i class="bi bi-trash-fill"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Daily Challenge with So Fresh</td>
+                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis in numquam dignissimos odio ullam, aliquam officiis earum quod? Id hic eligendi mollitia illum dolores labore officiis soluta quis placeat vel!</td> 
+                        <td><img src="../src/img/products/parfait.png" alt="" width="50px"></td>
+                        <td>Fitness, Diets</td>
+                        <td><a href="#"><i class="bi bi-eye-fill"></i></a> <a href="#"><i class="bi bi-pencil-square"></i></a> <a href="#"><i class="bi bi-trash-fill"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Daily Challenge with So Fresh</td>
+                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis in numquam dignissimos odio ullam, aliquam officiis earum quod? Id hic eligendi mollitia illum dolores labore officiis soluta quis placeat vel!</td> 
+                        <td><img src="../src/img/products/parfait.png" alt="" width="50px"></td>
+                        <td>Fitness, Diets</td>
+                        <td><a href="#"><i class="bi bi-eye-fill"></i></a> <a href="#"><i class="bi bi-pencil-square"></i></a> <a href="#"><i class="bi bi-trash-fill"></i></a></td>
+                      </tr>
+                      <tr>
+                        <td>Daily Challenge with So Fresh</td>
+                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis in numquam dignissimos odio ullam, aliquam officiis earum quod? Id hic eligendi mollitia illum dolores labore officiis soluta quis placeat vel!</td> 
+                        <td><img src="../src/img/products/parfait.png" alt="" width="50px"></td>
+                        <td>Fitness, Diets</td>
+                        <td><a href="#"><i class="bi bi-eye-fill"></i></a> <a href="#"><i class="bi bi-pencil-square"></i></a> <a href="#"><i class="bi bi-trash-fill"></i></a></td>
+                      </tr>
                       
-                      <div class="text-center mt-3">
-                        <a href="#" class="btn btn-lg btn-warning">Add Product</a>
-                        <!-- <button type="submit" class="btn btn-lg btn-primary">Sign up</button> -->
-                      </div>
-                    </form>
-                  </div>
+                      
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
