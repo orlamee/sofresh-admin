@@ -86,7 +86,7 @@
 
           <li class="sidebar-item">
             <a class="sidebar-link" href="ordered-items.html">
-              <i class="align-middle" data-feather="shopping-cart"></i> <span class="align-middle">Ordered Items</span>
+              <i class="align-middle" data-feather="shopping-cart"></i> <span class="align-middle">Orders</span>
             </a>
           </li>
 
@@ -180,7 +180,8 @@
         <div class="container-fluid p-0">
           <div class="row"> 
             <div class="col-md-12">
-              <h1 class="h3 mb-3">Ordered Items</h1>
+              <h1 class="h3 mb-3">Orders</h1>
+              <a href="add-subadmin.html" class="btn btn-sm btn-warning float-end create-sub">Add New Order <i class="bi bi-cart"></i></a>
             </div>
           </div>
           <div class="row">
@@ -192,11 +193,13 @@
                       <tr>
                         <th>Customer Name</th>
                         <th>Customer Email</th>
-                        <th>Total Amount(NG)</th>
-                        <th>Store</th>
-                        <th>Status</th>
-                        <th>Delivery</th>
+                        <th>Pickup/Delivery</th>
                         <th>Delivery Fee</th>
+                        <th>Store</th>
+                        <th>Total Amount(NG)</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Action</th>
                         <!-- <th class="d-none d-md-table-cell">Assignee</th> -->
                       </tr>
                     </thead>
@@ -204,39 +207,15 @@
                       <tr>
                         <td>Ola John</td>
                         <td>johndoe@gmail.com</td>
-                        <td>12000</td>
-                        <td>Yaba</td>
-                        <td><span class="badge bg-success">Completed</span></td>
                         <td>Pickup</td>
-                        <td>1000</td>
+                        <td>₦500</td>
+                        <td>Opebi</td>
+                        <td>₦1500</td>
+                        <td>13th Sep. 2022</td>
+                        <td><span class="badge bg-success">Active</span></td>
+                        <td><a href="view-order.html"><i class="bi bi-eye-fill me-2"></i></a> <a href="#"><i class="bi bi-pencil-square me-2"></i></a> <a href="#"><i class="bi bi-trash-fill"></i></a></td>
                       </tr>
-                      <tr>
-                        <td>Ozil</td>
-                        <td>johndoe@gmail.com</td>
-                        <td>15000</td>
-                        <td>Lekki</td>
-                        <td><span class="badge bg-secondary">Processing</span></td>
-                        <td>Delivery</td>
-                        <td>1500</td>
-                      </tr>
-                      <tr>
-                        <td>Ola John</td>
-                        <td>johndoe@gmail.com</td>
-                        <td>12000</td>
-                        <td>Yaba</td>
-                        <td><span class="badge bg-danger">Cancelled</span></td>
-                        <td>Pickup</td>
-                        <td>1000</td>
-                      </tr>
-                      <tr>
-                        <td>Ola John</td>
-                        <td>johndoe@gmail.com</td>
-                        <td>12000</td>
-                        <td>Ikota</td>
-                        <td><span class="badge bg-success">Completed</span></td>
-                        <td>Pickup</td>
-                        <td>1000</td>
-                      </tr>
+                      
                     </tbody>
                   </table>
                 </div>
