@@ -180,44 +180,62 @@
         <div class="container-fluid p-0">
           <div class="row"> 
             <div class="col-md-12">
-              <h1 class="h3 mb-3">Orders</h1>
-              <a href="add-order.html" class="btn btn-sm btn-warning float-end create-sub">Add New Order <i class="bi bi-cart"></i></a>
+              <h1 class="h3 mb-3">Add Order</h1>
+              <!-- <a href="#" class="btn btn-sm btn-warning float-end create-sub">Create SubAdmin <i class="bi bi-person-plus-fill"></i></a> -->
             </div>
           </div>
           <div class="row">
-            <div class="col-12">
+            <div class="">
               <div class="card">
                 <div class="card-body">
-                  <table class="table table-hover my-0">
-                    <thead>
-                      <tr>
-                        <th>Customer Name</th>
-                        <th>Customer Email</th>
-                        <th>Pickup/Delivery</th>
-                        <th>Delivery Fee</th>
-                        <th>Store</th>
-                        <th>Total Amount(NG)</th>
-                        <th>Date</th>
-                        <th>Status</th>
-                        <th>Action</th>
-                        <!-- <th class="d-none d-md-table-cell">Assignee</th> -->
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Ola John</td>
-                        <td>johndoe@gmail.com</td>
-                        <td>Pickup</td>
-                        <td>₦500</td>
-                        <td>Opebi</td>
-                        <td>₦1500</td>
-                        <td>13th Sep. 2022</td>
-                        <td><span class="badge bg-success">Active</span></td>
-                        <td><a href="view-order.html"><i class="bi bi-eye-fill me-2"></i></a> <a href="#"><i class="bi bi-pencil-square me-2"></i></a> <a href="#"><i class="bi bi-trash-fill"></i></a></td>
-                      </tr>
+                  <div class="m-sm-4">
+                    <form>
+                      <div class="mb-3">
+                        <label class="form-label">Customer Name</label>
+                        <input class="form-control form-control-lg" type="text" name="name" />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Customer Email</label>
+                        <input class="form-control form-control-lg" type="email" name="name" />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Pickup/Delivery</label>
+                        <select class="form-select form-control form-control-lg" >
+                          <option selected>Select a Pickup/Delivery</option>
+                          <option value="1">Gokada</option>
+                          <option value="2">Uber</option>
+                          <option value="2">Pickup</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Delivery Fee</label>
+                        <input class="form-control form-control-lg" type="number" name="price" placeholder="Enter price" />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Total Amount</label>
+                        <input class="form-control form-control-lg" type="number" name="promo" placeholder="Enter promo price" />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Date</label>
+                        <input class="form-control form-control-lg" type="date" name="promo" placeholder="Enter promo price" />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Status</label>
+                        <select class="form-select form-control form-control-lg" >
+                          <option selected>Select Status</option>
+                          <option value="1">Complete</option>
+                          <option value="2">Processing</option>
+                          <option value="2">Cancelled</option>
+                        </select>
+                      </div>
                       
-                    </tbody>
-                  </table>
+                      
+                      <div class="text-center mt-3">
+                        <a href="#" class="btn btn-lg btn-warning">Add Order</a>
+                        <!-- <button type="submit" class="btn btn-lg btn-primary">Sign up</button> -->
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
