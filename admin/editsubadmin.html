@@ -36,24 +36,6 @@
             </a>
           </li>
 
-          <!-- <li class="sidebar-item">
-            <a class="sidebar-link" href="pages-profile.html">
-              <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
-            </a>
-          </li>
-
-          <li class="sidebar-item">
-            <a class="sidebar-link" href="pages-sign-in.html">
-              <i class="align-middle" data-feather="log-in"></i> <span class="align-middle">Sign In</span>
-            </a>
-          </li>
-
-          <li class="sidebar-item">
-            <a class="sidebar-link" href="pages-sign-up.html">
-              <i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Sign Up</span>
-            </a>
-          </li> -->
-
           <li class="sidebar-item">
             <a class="sidebar-link" href="subadmin.html">
               <i class="align-middle" data-feather="users"></i> <span class="align-middle">Sub Admin</span>
@@ -180,68 +162,47 @@
         <div class="container-fluid p-0">
           <div class="row"> 
             <div class="col-md-12">
-              <h1 class="h3 mb-3">Products</h1>
-              <a href="add-products.html" class="btn btn-sm btn-warning float-end create-sub">Create Products <i class="bi bi-bag-plus-fill"></i></a>
+              <h1 class="h3 mb-3">Update Sub Admin</h1>
+              <!-- <a href="#" class="btn btn-sm btn-warning float-end create-sub">Create SubAdmin <i class="bi bi-person-plus-fill"></i></a> -->
             </div>
           </div>
           <div class="row">
-            <div class="col-12">
+            <div class="">
               <div class="card">
                 <div class="card-body">
-                  <table class="table table-hover my-0">
-                    <thead>
-                      <tr>
-                        <th>Name</th>
-                        <th>Image</th>
-                        <th>Price</th>
-                        <th>Promo Price</th>
-                        <th>Category</th>
-                        <th>Store</th>
-                        <th>Actions</th>
-
-                        <!-- <th class="d-none d-md-table-cell">Assignee</th> -->
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Sandwiches</td>
-                        <td><img src="../src/img/products/chicken.png" alt="" width="50px"></td> 
-                        <td>N10000</td>
-                        <td>N9000</td>
-                        <td>Parfait</td>
-                        <td>Yaba</td>
-                        <td><a href="#"><i class="bi bi-eye-fill me-2"></i></a> <a href="editproduct.html"><i class="bi bi-pencil-square me-2"></i></a> <a href="#"><i class="bi bi-trash-fill"></i></a></td>
-                      </tr>
-                      <tr>
-                        <td>Parfait</td>
-                        <td><img src="../src/img/products/parfait.png" alt="" width="50px"></td> 
-                        <td>N1000</td>
-                        <td>N900</td>
-                        <td>Parfait</td>
-                        <td>Lekki</td>
-                        <td><a href="#"><i class="bi bi-eye-fill me-2"></i></a> <a href="editproduct.html"><i class="bi bi-pencil-square me-2"></i></a> <a href="#"><i class="bi bi-trash-fill"></i></a></td>
-                      </tr>
-                      <tr>
-                        <td>Sandwiches</td>
-                        <td><img src="../src/img/products/chicken.png" alt="" width="50px"></td> 
-                        <td>N10000</td>
-                        <td>N9000</td>
-                        <td>Parfait</td>
-                        <td>Yaba</td>
-                        <td><a href="#"><i class="bi bi-eye-fill me-2"></i></a> <a href="/editproduct.html"><i class="bi bi-pencil-square me-2"></i></a> <a href="#"><i class="bi bi-trash-fill"></i></a></td>
-                      </tr>
-                      <tr>
-                        <td>Sandwiches</td>
-                        <td><img src="../src/img/products/parfait.png" alt="" width="50px"></td> 
-                        <td>N10000</td>
-                        <td>N9000</td>
-                        <td>Parfait</td>
-                        <td>Ikota</td>
-                        <td><a href="#"><i class="bi bi-eye-fill me-2"></i></a> <a href="/editproduct.html"><i class="bi bi-pencil-square me-2"></i></a> <a href="#"><i class="bi bi-trash-fill"></i></a></td>
-                      </tr>
+                  <div class="m-sm-4">
+                    <form>
+                      <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input class="form-control form-control-lg" type="text" name="name" value="John Doe" />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input class="form-control form-control-lg" type="email" name="email" value="johndoe@email.com" disabled/>
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Phone</label>
+                        <input class="form-control form-control-lg" type="tel" name="phone" value="0800839239" />
+                      </div>
                       
-                    </tbody>
-                  </table>
+                      <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input class="form-control form-control-lg" type="password" name="password" value="299901" disabled />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Status</label>
+                        <select class="form-select form-control form-control-lg" >
+                          <option selected>Select Status</option>
+                          <option value="1">Active</option>
+                          <option value="2">Inactive</option>
+                          <!-- <option value="3">Three</option> -->
+                        </select>
+                      </div>
+                      <div class="text-center mt-3">
+                        <a href="#" class="btn btn-lg btn-warning">Update Sub Admin</a>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>

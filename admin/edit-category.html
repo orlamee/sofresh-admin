@@ -107,6 +107,7 @@
               <i class="align-middle" data-feather="settings"></i> <span class="align-middle">Settings</span>
             </a>
           </li>
+          
         </ul>
       </div>
     </nav>
@@ -180,68 +181,34 @@
         <div class="container-fluid p-0">
           <div class="row"> 
             <div class="col-md-12">
-              <h1 class="h3 mb-3">Products</h1>
-              <a href="add-products.html" class="btn btn-sm btn-warning float-end create-sub">Create Products <i class="bi bi-bag-plus-fill"></i></a>
+              <h1 class="h3 mb-3">Update Category</h1>
+              <!-- <a href="#" class="btn btn-sm btn-warning float-end create-sub">Create SubAdmin <i class="bi bi-person-plus-fill"></i></a> -->
             </div>
           </div>
           <div class="row">
-            <div class="col-12">
+            <div class="">
               <div class="card">
                 <div class="card-body">
-                  <table class="table table-hover my-0">
-                    <thead>
-                      <tr>
-                        <th>Name</th>
-                        <th>Image</th>
-                        <th>Price</th>
-                        <th>Promo Price</th>
-                        <th>Category</th>
-                        <th>Store</th>
-                        <th>Actions</th>
-
-                        <!-- <th class="d-none d-md-table-cell">Assignee</th> -->
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Sandwiches</td>
-                        <td><img src="../src/img/products/chicken.png" alt="" width="50px"></td> 
-                        <td>N10000</td>
-                        <td>N9000</td>
-                        <td>Parfait</td>
-                        <td>Yaba</td>
-                        <td><a href="#"><i class="bi bi-eye-fill me-2"></i></a> <a href="editproduct.html"><i class="bi bi-pencil-square me-2"></i></a> <a href="#"><i class="bi bi-trash-fill"></i></a></td>
-                      </tr>
-                      <tr>
-                        <td>Parfait</td>
-                        <td><img src="../src/img/products/parfait.png" alt="" width="50px"></td> 
-                        <td>N1000</td>
-                        <td>N900</td>
-                        <td>Parfait</td>
-                        <td>Lekki</td>
-                        <td><a href="#"><i class="bi bi-eye-fill me-2"></i></a> <a href="editproduct.html"><i class="bi bi-pencil-square me-2"></i></a> <a href="#"><i class="bi bi-trash-fill"></i></a></td>
-                      </tr>
-                      <tr>
-                        <td>Sandwiches</td>
-                        <td><img src="../src/img/products/chicken.png" alt="" width="50px"></td> 
-                        <td>N10000</td>
-                        <td>N9000</td>
-                        <td>Parfait</td>
-                        <td>Yaba</td>
-                        <td><a href="#"><i class="bi bi-eye-fill me-2"></i></a> <a href="/editproduct.html"><i class="bi bi-pencil-square me-2"></i></a> <a href="#"><i class="bi bi-trash-fill"></i></a></td>
-                      </tr>
-                      <tr>
-                        <td>Sandwiches</td>
-                        <td><img src="../src/img/products/parfait.png" alt="" width="50px"></td> 
-                        <td>N10000</td>
-                        <td>N9000</td>
-                        <td>Parfait</td>
-                        <td>Ikota</td>
-                        <td><a href="#"><i class="bi bi-eye-fill me-2"></i></a> <a href="/editproduct.html"><i class="bi bi-pencil-square me-2"></i></a> <a href="#"><i class="bi bi-trash-fill"></i></a></td>
-                      </tr>
-                      
-                    </tbody>
-                  </table>
+                  <div class="m-sm-4">
+                    <form>
+                      <div class="mb-3">
+                        <label class="form-label">Category Name</label>
+                        <input class="form-control form-control-lg" type="text" name="name" value="Parfait" disabled />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Category Description</label>
+                        <textarea class="form-control" rows="4" value="Lorem ipsum"></textarea>
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Upload Category Image</label>
+                        <input class="form-control form-control-sm" id="formFileSm" type="file">
+                      </div>
+                      <div class="text-center mt-3">
+                        <a href="#" class="btn btn-lg btn-warning">Update Category</a>
+                        <!-- <button type="submit" class="btn btn-lg btn-primary">Sign up</button> -->
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
