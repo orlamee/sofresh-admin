@@ -26,3 +26,39 @@ i.bi.bi-pencil-square{
 i.bi.bi-trash-fill{
   color: red;
 }
+
+.modal {
+  --bs-modal-zindex: 1055;
+  --bs-modal-width: 600px;
+}
+
+.modal-header {
+  border-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+/* .edit {
+  margin-top: -50px;
+} */
+
+.edit p {
+  color: #374935;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.edit h2 {
+  color: #374935;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.modal-content {
+  padding: 20px;
+}

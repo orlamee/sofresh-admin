@@ -167,7 +167,7 @@
                 <i class="align-middle" data-feather="settings"></i>
               </a>
 
-              <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+              <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                 <img src="img/logo.svg" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span class="text-dark">Hello, Admin!</span>
               </a>
               <div class="dropdown-menu">
@@ -189,7 +189,7 @@
           <div class="row"> 
             <div class="col-md-12">
               <h1 class="h3 mb-3">Extras</h1>
-              <a href="add-extras.html" class="btn btn-sm btn-warning float-end create-sub">Add New Extras <i class="bi bi-person-plus-fill"></i></a>
+              <a data-bs-toggle="modal" data-bs-target="#addextra" class="btn btn-sm btn-warning float-end create-sub">Add New Extras <i class="bi bi-person-plus-fill"></i></a>
             </div>
           </div>
           <div class="row">
@@ -215,21 +215,97 @@
                         <td>Ola John</td>
                         <td>₦1500</td>
                         <td><span class="badge bg-success">Active</span></td>
-                        <td><a href="#"><i class="bi bi-eye-fill me-2"></i></a> <a data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-pencil-square me-2"></i></a> <a href="#"><i class="bi bi-trash-fill"></i></a></td>
+                        <td><a href="#"><i class="bi bi-eye-fill me-2"></i></a> <a data-bs-toggle="modal" data-bs-target="#editextra"><i class="bi bi-pencil-square me-2"></i></a> <a href="#"><i class="bi bi-trash-fill"></i></a></td>
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
+                        <div class="modal fade" id="addextra" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                               <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <div class="modal-body">
-                                ...
+                                <div class="row edit">
+                                  <div class="col">
+                                    <h2>Add New Extra</h2>
+                                    <p>Upload image and enter information 
+                                      below to add extras</p>
+                                  </div>
+                                </div>
+                                <div class="row mt-4">
+                                  <form>
+                                    <div class="mb-3">
+                                      <label class="form-label">Image</label>
+                                      <input class="form-control" type="file" name="name"  />
+                                    </div>
+                                    <div class="mb-3">
+                                      <label class="form-label">Name</label>
+                                      <input class="form-control" type="text" name="name" placeholder="Enter name of extra" />
+                                    </div>
+                                    <div class="mb-3">
+                                      <label class="form-label">Price</label>
+                                      <input class="form-control" type="text" placeholder="Enter price of extra" />
+                                    </div>
+                                    <div class="mb-3">
+                                      <label class="form-label">Status</label>
+                                      <select class="form-select form-control" >
+                                        <option selected>Enter status of extra</option>
+                                        <option value="1">Active</option>
+                                        <option value="2">Inactive</option>
+                                        <!-- <option value="3">Three</option> -->
+                                      </select>
+                                    </div>
+                                    <div class="text-center mt-3">
+                                      <a href="#" class="btn btn-lg btn-warning w-100">Save </a>
+                                    </div>
+                                  </form>
+                                </div>
                               </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                        <!--Edit Modal -->
+                        <div class="modal fade" id="editextra" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="row edit">
+                                  <div class="col">
+                                    <h2>Edit Extra</h2>
+                                    <p>Upload image and enter information 
+                                      below to add extras</p>
+                                  </div>
+                                </div>
+                                <div class="row mt-4">
+                                  <form>
+                                    <div class="mb-3">
+                                      <label class="form-label">Image</label>
+                                      <input class="form-control" type="file" name="name"  />
+                                    </div>
+                                    <div class="mb-3">
+                                      <label class="form-label">Name</label>
+                                      <input class="form-control" type="text" name="name" Value="Granola" />
+                                    </div>
+                                    <div class="mb-3">
+                                      <label class="form-label">Price</label>
+                                      <input class="form-control" type="text" Value="1200" />
+                                    </div>
+                                    <div class="mb-3">
+                                      <label class="form-label">Status</label>
+                                      <select class="form-select form-control" >
+                                        <option>Enter status of extra</option>
+                                        <option value="1" selected>Active</option>
+                                        <option value="2">Inactive</option>
+                                        <!-- <option value="3">Three</option> -->
+                                      </select>
+                                    </div>
+                                    <div class="text-center mt-3">
+                                      <a href="#" class="btn btn-lg btn-warning w-100">Save Change</a>
+                                    </div>
+                                  </form>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -264,8 +340,7 @@
   
 
   <script src="js/app.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  
   <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script> -->
 
